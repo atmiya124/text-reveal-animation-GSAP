@@ -1,0 +1,20 @@
+header {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+   
+}
+
+#my-text {
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-family: 'bebas Neue';
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 1;
+    margin: 0;
+}
+
+.char {
+    transform: translateY(115px);
+    transition: transform .5s;
+}
