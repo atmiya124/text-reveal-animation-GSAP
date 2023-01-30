@@ -12,9 +12,15 @@ header {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     line-height: 1;
     margin: 0;
+    text-align: center;
 }
 
-.char {
+#quote {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#my-text .char {
     transform: translateY(115px);
     transition: transform .5s;
 }

@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1 id="my-text">Atmiya.Patel</h1>
+        <p id="quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
     </header>
 
     <script src="https://unpkg.com/split-type"></script>
@@ -17,13 +18,26 @@
 
     <script>
         const text = new SplitType('#my-text')
+        const textQuote = new SplitType('#quote')
 
-        gsap.to(".char", {
+        gsap.to("#my-text .char", {
             duration: .2,
             opacity:1,
             y:0,
             stagger: .04,
             delay:.6,
+        })
+
+        gsap.from("#quote .char", {
+            duration: .8,
+            opacity:0,
+            scale:0,
+            y:80,
+            rotationX:180,
+            transformOrigin: "0% 50% -50",
+            ease: "back",
+            stagger: .01,
+            delay:1,
         })
     </script>
 </body>
